@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Home - Mal v0.1.0</title>
+    <title>Home - Pasientens måledata v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -67,7 +67,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Mal</span>
+          <p><span style="font-size:12pt;font-weight:bold">Pasientens måledata</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
@@ -141,7 +141,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Mal - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.no/fhir/ig/mal/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Pasientens måledata - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://utviklerportal.test.nhn.no/informasjonstjenester/pasientens-maaledata/pmd/ig/observation/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -153,10 +153,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://utviklerportal.test.nhn.no/informasjonstjenester/pasientens-maaledata/pmd/ig/observation/ImplementationGuide/fhir.nhn.no.observation<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://utviklerportal.test.nhn.no/informasjonstjenester/pasientens-maaledata/pmd/ig/observation/ImplementationGuide/fhir.nhn.no.observation"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal|0.1.0"/></span>
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://utviklerportal.test.nhn.no/informasjonstjenester/pasientens-maaledata/pmd/ig/observation/ImplementationGuide/fhir.nhn.no.observation|0.1.0"/></span>
       </td>
     </tr>
 
@@ -172,14 +172,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2026-03-12
+            as of 2026-11-09
           
         
       </td>
 
 
 
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">Mal</span></td>
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">pmd</span></td>
     </tr>
 
 
@@ -198,7 +198,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#tittel" id="markdown-toc-tittel">Tittel</a></li>
+  <li><a href="#pasientens-måledata" id="markdown-toc-pasientens-måledata">Pasientens måledata</a></li>
   <li><a href="#mål" id="markdown-toc-mål">Mål</a></li>
   <li><a href="#omfang" id="markdown-toc-omfang">Omfang</a></li>
   <li><a href="#brukstilfeller" id="markdown-toc-brukstilfeller">Brukstilfeller</a></li>
@@ -206,31 +206,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<h3 id="tittel">Tittel</h3>
+<h3 id="pasientens-måledata">Pasientens måledata</h3>
 
-<p>Introduksjonstekst (husk at dette er en mal, og ALL tekst må endres - dette er kun et eksempel)</p>
+<p>Pasientens måledata er en tjeneste for å dele observasjoner av pasienter mellom virksomheter.</p>
+
+<p>Typiske målinger kan være vitale målinger, scoringer/ skjemaresultater.</p>
 
 <h3 id="mål">Mål</h3>
 
-<p>Målet med denne implementasjonsguiden er å gi en standardisert måte å representere og utveksle helsedata på ved hjelp av HL7 FHIR. Guiden beskriver hvordan ulike FHIR-profiler og ressurser kan brukes for å oppnå interoperabilitet mellom helsesystemer.</p>
+<p>Alle måletyper som støttes av tjenesten vil dokumenteres som profiler av Observation, og hvordan utvekslingen foregår er dokumentert gjennom denne IG.</p>
 
 <h3 id="omfang">Omfang</h3>
 
 <p>Denne implementasjonsguiden dekker følgende områder:</p>
 
 <ul>
-  <li>Pasientadministrasjon</li>
   <li>Kliniske observasjoner</li>
-  <li>Medisinsk historikk</li>
-  <li>Behandlingsplaner</li>
-  <li>Laboratorieresultater</li>
 </ul>
 
 <h3 id="brukstilfeller">Brukstilfeller</h3>
 
-<h4 id="pasientregistrering">Pasientregistrering</h4>
-
-<p>Denne guiden beskriver hvordan pasienter kan registreres i et helsesystem ved hjelp av FHIR <code class="language-plaintext highlighter-rouge">Patient</code>-ressursen. Eksempler inkluderer opprettelse, oppdatering og sletting av pasientdata.</p>
+<ul>
+  <li>Deling av målinger fra kommunal DHO med sykehus og fastlege</li>
+  <li>Deling av pasientbesvarte skjema-scores med helsepersonell</li>
+</ul>
 
 <h4 id="kliniske-observasjoner">Kliniske observasjoner</h4>
 
@@ -261,7 +260,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.no">HL7 Norge</a>.  Package hl7.fhir.no.mal#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 12, 2026 13:22+0000">2026-03-12</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.nhn.no">Norsk helsenett</a>.  Package fhir.nhn.no.observation#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 9, 2026 12:37+0000">2026-11-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

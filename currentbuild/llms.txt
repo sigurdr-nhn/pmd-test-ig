@@ -1,4 +1,4 @@
-# hl7.fhir.no.mal#0.1.0: Mal
+# fhir.nhn.no.observation#0.1.0: Pasientens måledata
 
 ## Pages
 
@@ -9,12 +9,12 @@
 
 ### Resource Profiles
 
-* [Blodprøve](StructureDefinition-mal-observation-blodprove.md)
-* [Pasient](StructureDefinition-mal-patient.md)
+* [Blodtrøkk](StructureDefinition-pmd-observation-blodprove.md)
+* [Pasient](StructureDefinition-pmd-patient.md)
 
 ### ImplementationGuides
 
-* [Mal](index.md)
+* [Pasientens måledata](index.md)
 
 ### Examples
 

@@ -1,21 +1,21 @@
 [{
-  "id" : "hl7.fhir.no.mal",
+  "id" : "fhir.nhn.no.observation",
   "type" : "ImplementationGuide",
-  "url" : "http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal",
+  "url" : "https://utviklerportal.test.nhn.no/informasjonstjenester/pasientens-maaledata/pmd/ig/observation/ImplementationGuide/fhir.nhn.no.observation",
   "version" : "0.1.0",
-  "name" : "Mal"
+  "name" : "pmd"
 },
 {
-  "id" : "mal-observation-blodprove",
+  "id" : "pmd-observation-blodprove",
   "type" : "StructureDefinition",
-  "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/mal-observation-blodprove",
+  "url" : "https://utviklerportal.test.nhn.no/informasjonstjenester/pasientens-maaledata/pmd/ig/observation/StructureDefinition/pmd-observation-blodprove",
   "version" : "0.1.0",
-  "name" : "MalObservationBlood"
+  "name" : "PmdObservationBloodPressure"
 },
 {
-  "id" : "mal-patient",
+  "id" : "pmd-patient",
   "type" : "StructureDefinition",
-  "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/mal-patient",
+  "url" : "https://utviklerportal.test.nhn.no/informasjonstjenester/pasientens-maaledata/pmd/ig/observation/StructureDefinition/pmd-patient",
   "version" : "0.1.0",
-  "name" : "MalPatient"
+  "name" : "PmdPatient"
 }]
