@@ -15,17 +15,17 @@ on:
         type: boolean
   pull_request:
     paths:
-      - 'mal/input/fsh/**'
-      - 'mal/sushi-config.yaml'
+      - 'pmd-observation/input/fsh/**'
+      - 'pmd-observation/sushi-config.yaml'
   push:
     branches: [main]
     paths:
-      - 'mal/input/fsh/**'
-      - 'mal/sushi-config.yaml'
+      - 'pmd-observation/input/fsh/**'
+      - 'pmd-observation/sushi-config.yaml'
 
 # CONFIGURATION: The "short name" of the IG and the folder must be the same
 env:
-  IG_SHORTNAME: mal
+  IG_SHORTNAME: pmd-observation
   # IG: ${{ vars.IG_KORTNAVN }}
 
 jobs:
